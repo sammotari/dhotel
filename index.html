@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>dhotel-></title>
+    </head>
+
+    <body>
+        <div class="container">
+            <!--the header include the first 100vh-->
+            <div class="header">
+                <div class="row">
+                    
+                    <div class="logo">
+                        <img src="images/dhotellogo.png" alt="" width="100px">
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                        <li><a href="form/form.html">book a room</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="desc">
+                    <h1 class="slide-left" style="font-family: Space Age;">D-Hotel</h1>
+                    <p class="slide-left">The home of delicious meals, yummy snacks, <br>nice drinks and cool
+                        environment for holiday
+                        vacations of any family and friends.</p>
+                    <div class="links slide-left">
+                        <a href="form/form.html" class="btn" style="border-bottom: 1px solud white;">book a room</a>
+                        <a href="#contact" class="btn2" style="border-bottom: 1px solud white;">or contact us.</a>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            <!--end of header-->
+            <!--main contain the menu, about us contact us infomation --siblings-->
+            <div class="main">
+                <div class="services-rm">
+                <div class="book-room" id="book">
+
+                    <h2><a href="#">Room booking</a></h2>
+                    <p>There are rooms available for our valued customers.<br>
+                        So you can book one for you family or friends to enjoy. <br><a href="#">book Room</a></p>
+                </div>
+                <div class="menu-order" id="menu">
+                    <h2><a href="#">Menu</a></h2>
+                    <p>We offer different lkinds of meals <br>
+                        Your taste is always availabe LOL.<br> You can view the menu to know more on the foodswe offer.
+                        <br>
+                        <strong>!!only offer the available meals </strong><br>
+                        <strong>!!Outside foods is not allowed</strong>
+                    </p>
+                    <a href="#">see menu</a>
+                </div>
+                </div>
+                
+                <div class="contents" id="about">
+                    <h2><a href="#about">About us</a></h2>
+                    <p>
+                    <h3>Manager</h3>
+                    Sam Zacharia
+                    <h3>Other members</h3>
+                    <table border="1">
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                        </tr>
+
+                        <tr>
+                            <td>John kim</td>
+                            <td>IT Expert (CIO)</td>
+                        </tr>
+                        <tr>
+                            <td>199</td>
+                            <td>Waiters </td>
+                        </tr>
+                        <tr>
+                            <td>70</td>
+                            <td>Chefs</td>
+                        </tr>
+                        <hr>
+                        <tr>
+                            <td>ToTal</td>
+                            <td>576 staff (management and non-management)</td>
+
+                        </tr>
+                    </table>
+
+                    </p>
+
+                </div>
+                <div class="contents" id = "blog">
+                    <h2><a href="#">Blog</a></h2>
+                    <p>Currently there is no blog!<br></p>
+                </div>
+                <div class="contents">
+                    <h2>Contact Us</h2>
+                    <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+                        <script type="text/javascript">
+                            function ValidateForm(frm) {
+                                if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+                                if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+                                if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+                                if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+                                return true;
+                            }
+                        </script>
+                        <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <label for="Name">Name*:</label>
+                                </td>
+                                <td>
+                                    <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="PhoneNumber">Phone number:</label>
+                                </td>
+                                <td>
+                                    <input name="PhoneNumber" type="text" maxlength="43"
+                                        style="width:100%;max-width:250px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="FromEmailAddress">Email address*:</label>
+                                </td>
+                                <td>
+                                    <input name="FromEmailAddress" type="text" maxlength="90"
+                                        style="width:100%;max-width:250px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="Comments">Comments*:</label>
+                                </td>
+                                <td>
+                                    <textarea name="Comments" rows="7" cols="40"
+                                        style="width:100%;max-width:350px;"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    * - required fields
+                                </td>
+                                <td>
+                                    <div style="float:right"><a href="sammotarih@gmail.com" id="lnk100"
+                                            title="form to email">form to email</a></div>
+                                    <input name="skip_Submit" type="submit" value="Submit" />
+
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="#">
+                    <div class="#">email: dhotel@gmail.com</div>
+                    <div class="#">Phone: +254759974363</div>
+                    <div class="#">P.OBox - KERICHO</div>
+                    <div class="#"></div>
+                </div>
+                <div class="#">
+                    <div class="#">twitter: @blackHat_254</div>
+                    <div class="#">Facebook: dhotel</div>
+                    <div class="#">Instagram: @dhotel</div>
+                    <div class="#">Reddit: dhotel</div>
+                </div>
+                <div class="#">
+                    <div class="#">We are located at Kabianga</div>
+                    <div class="#">100 km from Kericho town</div>
+                    <div class="#">comm00542020@students.kabianga.ac.ke</div>
+                    <div class="#"></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </body>
+
+</html>
